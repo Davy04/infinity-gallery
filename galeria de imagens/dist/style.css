@@ -148,3 +148,7 @@ img {
 .img_pequena {
   width: 30vw;
 }
+
+video {
+  width: 60vw;
+}

@@ -64,7 +64,6 @@ var timerBig = setInterval(timer1, 10000);
 var timerSmall;
 contador = 0;
 
-
 function timer1() {
 	contador++;
 	console.log(contador)
@@ -74,7 +73,6 @@ function timer1() {
 		timerSmall = setInterval(timer2, 5000)
 	}
 }
-
 function timer2() {
 	var clica = document.querySelector("#back");
 	clica.click();
@@ -84,27 +82,20 @@ function timer2() {
 document.addEventListener("keypress", function (e) {
 
 	if (e.key === "a") {
-
-		
 		var btn = document.querySelector("#forward");
 		btn.click();
 		clearInterval(timerBig);
 		timerBig = setInterval(timer1, 10000);
 		clearInterval(timerSmall);
-
 	}
 
 	if (e.key === "d") {
-
-		
 		var btn = document.querySelector("#back");
 		btn.click();
 		clearInterval(timerBig);
 		timerBig = setInterval(timer1, 10000)
 		clearInterval(timerSmall)
-
 	}
-
 });
 
 
